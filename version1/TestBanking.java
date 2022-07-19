@@ -6,11 +6,9 @@
 
 import banking.*;
 
-public class TestBanking
-{
+public class TestBanking {
 
-  public static void main(String[] args) 
-  {
+  public static void main(String[] args) {
     Bank     bank = new Bank();
     Customer customer;
     Account account;
@@ -105,7 +103,9 @@ public class TestBanking
     System.out.println("Deposit 150.00: " + account.deposit(150.00));
     System.out.println("Withdraw 750.00: " + account.withdraw(750.00));
     // Print out the final account balance
-    System.out.println("Customer [" + customer.getLastName() + ", " + customer.getFirstName() + "] has a balance of " + account.getBalance());
+    System.out.println("Customer [" + customer.getLastName()
+		       + ", " + customer.getFirstName()
+		       + "] has a balance of " + account.getBalance());
 
   }
 }
